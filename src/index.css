@@ -1,0 +1,38 @@
+/* src/index.css - global styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Segoe UI, Arial, sans-serif; background: #f2f5f9; color: #1b2b3a; }
+.wrap { max-width: 900px; margin: 0 auto; padding: 16px 16px 48px; }
+h1, h2 { color: #0f8f83; }
+.sub { color: #5b6b7c; }
+ 
+.nav { display: flex; align-items: center; gap: 16px; background: #0f8f83; padding: 12px 20px; }
+.nav a { color: #e8fffb; text-decoration: none; padding: 4px 10px; border-radius: 6px; }
+.nav a.active { background: #0b6f66; font-weight: bold; }
+.nav .brand { font-weight: bold; font-size: 18px; color: #fff; margin-right: auto; }
+.badge { background: #b45f00; color: #fff; border-radius: 999px; padding: 1px 8px; font-size: 12px; margin-left: 4px; }
+ 
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.card { background: #fff; border: 1px solid #d3dce6; border-radius: 12px; padding: 14px; }
+.card h3 { margin: 0 0 4px; }
+.price { color: #0f8f83; font-weight: bold; }
+.muted { color: #5b6b7c; font-size: 13px; }
+ 
+.btn { border: 0; border-radius: 8px; padding: 7px 13px; font-size: 14px; cursor: pointer;
+color: #fff; background: #2f6fd6; margin-right: 6px; text-decoration: none; display: inline-block; }
+.btn.ghost { background: #5b6b7c; }
+.btn.danger { background: #c0392b; }
+.btn:hover { opacity: .88; }
+.btn[disabled] { opacity: .45; cursor: not-allowed; }
+ 
+.row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #e3e9f0; }
+.row .grow { flex: 1; }
+.total { font-size: 20px; font-weight: bold; margin: 14px 0; }
+ 
+form.box { background: #fff; border: 1px solid #d3dce6; border-radius: 12px; padding: 18px; max-width: 520px; }
+label { display: block; font-weight: 600; margin-top: 12px; }
+input[type=text], input[type=email], textarea, select { width: 100%; padding: 9px 11px;
+  border: 1px solid #d3dce6; border-radius: 8px; font-size: 15px; font-family: inherit; }
+.inline label { display: inline; font-weight: normal; margin-right: 14px; }
+.err { color: #c0392b; font-size: 13px; margin: 4px 0 0; }
+input.bad, textarea.bad, select.bad { border-color: #c0392b; }
+.ok { background: #e6f7f4; border: 1px solid #0f8f83; border-radius: 12px; padding: 18px; }
